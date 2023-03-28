@@ -2,32 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
-  const courseSyllabus = [
-    {
-      topic: 'Introduction to Computer Science',
-      subtopics: [
-        'History of Computing',
-        'Data Representation',
-        'Algorithms and Problem Solving'
-      ]
-    },
-    {
-      topic: 'Programming Fundamentals',
-      subtopics: ['Variables and Data Types', 'Control Structures', 'Functions']
-    },
-    {
-      topic: 'Object-Oriented Programming',
-      subtopics: ['Classes and Objects', 'Inheritance', 'Polymorphism']
-    },
-    {
-      topic: 'Data Structures and Algorithms',
-      subtopics: [
-        'Arrays and Linked Lists',
-        'Stacks and Queues',
-        'Sorting and Searching'
-      ]
-    }
-  ]
+ 
   return (
     <div>
       {/* loader */}

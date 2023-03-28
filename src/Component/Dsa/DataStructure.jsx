@@ -17,7 +17,6 @@ const DataStructure = () => {
       lectures: "20 Lectures"
     }
   ]
-  https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221213113312/Queue-Data-Structures.png
   return (
     <div>
       {/* <!-- Start of breadcrumb section

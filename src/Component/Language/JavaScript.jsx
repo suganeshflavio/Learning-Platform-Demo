@@ -2,15 +2,21 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const JavaScript = () => {
+
   const courseSyllabus = [
-    {
-      topic: 'Introduction of Data Structures',
-      images:
-        'https://jthemes.net/themes/html/genius-course/assets/img/course/bc-6.jpg',
-      description:
-        ' In computer science, a data structure is a way of organizing and storing data in a computer program so that it can be accessed and used efficiently. Data structures provide a means of managing large amounts of data, enabling efficient searching, sorting, insertion, and deletion of data Data structures can be categorized into two types: primitive data structures and non-primitive data structures. Primitive data structures are the most basic data structures available in a programming language, such as integers, floating-point numbers, characters, and booleans. Non-primitive data structures are complex data structures that are built using primitive data types, such as arrays, linked lists, stacks, queues, trees, graphs, and hash tables The choice of data structure for a particular task depends on the type and amount of data to be processed, the operations that need to be performed on the data, and the efficiency requirements of the program. Efficient use of data structures can greatly improve the performance of a program, making it faster and more memory-efficient. A data structure is a particular way of organizing data in a computer so that it can be used effectively. The idea is to reduce the space and time complexities of different tasks.'
-    }
-  ]
+		{
+			topic: 'Introduction to JavaScript',
+			images:'https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230305183140/Javascript.jpg',
+			description:
+				'This Javascript Tutorial is designed to help both beginners and experienced professionals master the fundamentals of JavaScript and unleash their creativity to build powerful web applications. From basic syntax and data types to advanced topics such as object-oriented programming and DOM manipulation. JavaScript (JS) is the most popular lightweight, interpreted compiled programming language. It can be used for both Client-side as well as Server-side developments. JavaScript also known as a scripting language for web pages.  JavaScript is used to make web pages dynamic and interactive. It means using JavaScript, we can change the web page content and styles dynamically. JavaScript is used to make web and mobile applications. To build web and mobile apps, we can use the most popular JavaScript frameworks like – ReactJS, React Native, Node.js etc. We can make robust server applications using JavaScript. To be precise we use JavaScript frameworks like Node.js and Express.js to build these servers. JavaSCript can be used to design Browser games. In JavaScript, lots of game engines are available that provide frameworks for building games. ',
+			price: 899,
+			duration: "90 Days",
+			video: "6 Hours",
+			language: "English",
+			lectures: "40 Lectures"
+		}
+	]
+
 
   return (
     <div>
@@ -25,7 +31,7 @@ const JavaScript = () => {
           <div class='page-breadcrumb-content text-center'>
             <div class='page-breadcrumb-title'>
               <h2 class='breadcrumb-head black bold'>
-                JavaScript<span>Course Details.</span>
+                JavaScript <span>Course Details.</span>
               </h2>
             </div>
             <div class='page-breadcrumb-item ul-li'>
@@ -50,21 +56,19 @@ const JavaScript = () => {
             <div class='col-md-9'>
               <div class='course-details-item'>
                 <div class='course-single-pic mb30'>
-                  <img src='assets/img/course/cs-1.jpg' alt='' />
+                  <img src={courseSyllabus[0].images} alt='' />
                 </div>
                 <div class='course-single-text'>
                   <div class='course-title mt10 headline relative-position'>
                     <h3>
                       <Link to='#'>
-                        Fully Responsive <b>{courseSyllabus?.topic}</b>
+                       <b>{courseSyllabus[0].topic}</b>
                       </Link>{' '}
-                      <span class='trend-badge text-uppercase bold-font'>
-                        <i class='fas fa-bolt'></i> TRENDING
-                      </span>
+                     
                     </h3>
                   </div>
                   <div class='course-details-content'>
-                    <p>{courseSyllabus?.description}</p>
+                    <p style={{textAlign:"justify"}}>{courseSyllabus[0].description}</p>
                   </div>
 
                   <div class='course-details-category ul-li'>
@@ -374,7 +378,7 @@ const JavaScript = () => {
               <div class='side-bar'>
                 <div class='course-side-bar-widget'>
                   <h3>
-                    Price <span>₹690</span>
+                    Price <span>₹{courseSyllabus[0].price}</span>
                   </h3>
                   <div class='genius-btn gradient-bg text-center text-uppercase float-left bold-font'>
                     <Link to='#'>
@@ -387,44 +391,20 @@ const JavaScript = () => {
                     </Link>
                   </div>
                 </div>
-                <div class='enrolled-student'>
-                  <div class='comment-ratting float-left ul-li'>
-                    <ul>
-                      <li>
-                        <i class='fas fa-star'></i>
-                      </li>
-                      <li>
-                        <i class='fas fa-star'></i>
-                      </li>
-                      <li>
-                        <i class='fas fa-star'></i>
-                      </li>
-                      <li>
-                        <i class='fas fa-star'></i>
-                      </li>
-                      <li>
-                        <i class='fas fa-star'></i>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class='student-number bold-font'>250 Enrolled</div>
-                </div>
+                
                 <div class='couse-feature ul-li-block'>
                   <ul>
                     <li>
-                      Lectures <span>20 Lectures</span>
+                      Lectures <span>{courseSyllabus[0].lectures}</span>
                     </li>
                     <li>
-                      Language <span>English, France</span>
+                      Language <span>{courseSyllabus[0].language}</span>
                     </li>
                     <li>
-                      Video <span>8 Hours</span>
+                      Video <span>{courseSyllabus[0].video}</span>
                     </li>
                     <li>
-                      Duration <span>30 Days</span>
-                    </li>
-                    <li>
-                      Includes <span>Breakfast</span>
+                      Duration <span>{courseSyllabus[0].duration}</span>
                     </li>
                   </ul>
                 </div>
@@ -444,7 +424,7 @@ const JavaScript = () => {
                       <div class='best-course-text'>
                         <div class='course-title mb20 headline relative-position'>
                           <h3>
-                            <Link to='#'>
+                            <Link to='/python'>
                               Fully Responsive Web Design &amp; Development.
                             </Link>
                           </h3>

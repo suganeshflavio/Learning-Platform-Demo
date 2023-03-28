@@ -25,7 +25,7 @@ const Carousel = () => {
               <div class="layer-1-3">
                 <div class="layer-1-4">
                   <div class="slider-course-category ul-li text-center">
-                    <span class="float-left">BY CATEGORY:</span>
+                    <span class="float-left" style={{color:"#46D0D0"}}>BY CATEGORY:</span>
                     <ul>
                       <li>JavaScript</li>
                       <li>Java</li>

@@ -14,6 +14,9 @@ import Home from "../Component/Home";
 import Java from "../Component/Language/Java";
 import JavaScript from "../Component/Language/JavaScript";
 import Python from "../Component/Language/Python";
+import Queue from "../Component/Dsa/Queue";
+import Clanguae from "../Component/Language/Clanguae";
+
 
 const MainRoutes = () => {
   return (
@@ -33,10 +36,9 @@ const MainRoutes = () => {
           <Route exact path={"/python"} element={<Python />} />
           <Route exact path={"/js"} element={<JavaScript />} />
           <Route exact path={"/dsa"} element={<DataStructure />} />
-
-          
-
-
+          <Route exact path={"/queue"} element={<Queue />} />
+          <Route exact path={"/c&c++"} element={<Clanguae />} />
+      
 
         </Routes>
         <Footer />

@@ -2,6 +2,45 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Course = () => {
+
+  const courseSyllabus = [
+    {
+      topic: "Introduction of JavaScript",
+      images: "https://jthemes.net/themes/html/genius-course/assets/img/course/bc-6.jpg",
+      price: 999,
+      duration: "60 Days",
+      keyword: "Web Design",
+      students: 250
+    },
+    {
+      topic: "Advnaced Python Topics",
+      images: "https://jthemes.net/themes/html/genius-course/assets/img/course/bc-1.jpg",
+      price: 899,
+      duration: "90 Days",
+      keyword: "Algorithms",
+      students: 350
+      
+    },
+    {
+      topic: "Core Topics of Java",
+      images: "https://jthemes.net/themes/html/genius-course/assets/img/course/bc-7.jpg",
+      price: 899,
+      duration: "90 Days",
+      keyword: "Oops",
+      students: 200
+
+    },
+    {
+      topic: "Basics of C and C++",
+      images: "https://jthemes.net/themes/html/genius-course/assets/img/course/bc-2.jpg",
+      price: 599,
+      duration: "45 Days",
+      keyword: "Dev Environment",
+      students: 50
+
+    }
+  ];
+
   return (
     <div>
       {/* <!-- Start of breadcrumb section
@@ -43,38 +82,21 @@ const Course = () => {
                   <div id="tab1" class="tab-content-1 pt35">
                     <div class="best-course-area best-course-v2">
                       <div class="row">
+                      {courseSyllabus.map(x => (
                         <div class="col-md-4">
                           <div class="best-course-pic-text relative-position">
                             <div class="best-course-pic relative-position">
-                              <img src="assets/img/course/bc-1.jpg" alt="" />
+                              <img src={x.images} alt="" />
                               <div class="trend-badge-2 text-center text-uppercase">
                                 <i class="fas fa-bolt"></i>
                                 <span>Trending</span>
                               </div>
                               <div class="course-price text-center gradient-bg">
-                                <span>$99.00</span>
+                                <span>₹{x.price}</span>
                               </div>
-                              <div class="course-rate ul-li">
-                                <ul>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                </ul>
-                              </div>
+                              
                               <div class="course-details-btn">
-                                <Link to="/coursedetails">
+                                <Link to="/python">
                                   COURSE DETAIL{" "}
                                   <i class="fas fa-arrow-right"></i>
                                 </Link>
@@ -84,475 +106,25 @@ const Course = () => {
                             <div class="best-course-text">
                               <div class="course-title mb20 headline relative-position">
                                 <h3>
-                                  <Link to="/coursedetails">
-                                    Fully Responsive Web Design &amp;
-                                    Development.
+                                  <Link to="/c&c++">
+                                   {x.topic}
                                   </Link>
                                 </h3>
                               </div>
                               <div class="course-meta">
                                 <span class="course-category">
-                                  <Link to="#">Web Design</Link>
+                                  <Link to="#">{x.keyword}</Link>
                                 </span>
                                 <span class="course-author">
-                                  <Link to="#">250 Students</Link>
+                                  <Link to="#">{x.students}</Link>
                                 </span>
                               </div>
                             </div>
                           </div>
                         </div>
+                        ))}
                         {/* <!-- /course --> */}
 
-                        <div class="col-md-4">
-                          <div class="best-course-pic-text relative-position">
-                            <div class="best-course-pic relative-position">
-                              <img src="assets/img/course/bc-2.jpg" alt="" />
-                              <div class="course-price text-center gradient-bg">
-                                <span>$99.00</span>
-                              </div>
-                              <div class="course-rate ul-li">
-                                <ul>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>{" "}
-                                </ul>
-                              </div>
-                              <div class="course-details-btn">
-                                <Link to="/coursedetails">
-                                  COURSE DETAIL{" "}
-                                  <i class="fas fa-arrow-right"></i>
-                                </Link>
-                              </div>
-                              <div class="blakish-overlay"></div>
-                            </div>
-                            <div class="best-course-text">
-                              <div class="course-title mb20 headline relative-position">
-                                <h3>
-                                  <Link to="/coursedetails">
-                                    Fully Responsive Web Design &amp;
-                                    Development.
-                                  </Link>
-                                </h3>
-                              </div>
-                              <div class="course-meta">
-                                <span class="course-category">
-                                  <Link to="#">Web Design</Link>
-                                </span>
-                                <span class="course-author">
-                                  <Link to="#">250 Students</Link>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        {/* <!-- /course --> */}
-
-                        <div class="col-md-4">
-                          <div class="best-course-pic-text relative-position">
-                            <div class="best-course-pic relative-position">
-                              <img src="assets/img/course/bc-3.jpg" alt="" />
-                              <div class="course-price text-center gradient-bg">
-                                <span>$99.00</span>
-                              </div>
-                              <div class="course-rate ul-li">
-                                <ul>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="course-details-btn">
-                                <Link to="/coursedetails">
-                                  COURSE DETAIL{" "}
-                                  <i class="fas fa-arrow-right"></i>
-                                </Link>
-                              </div>
-                              <div class="blakish-overlay"></div>
-                            </div>
-                            <div class="best-course-text">
-                              <div class="course-title mb20 headline relative-position">
-                                <h3>
-                                  <Link to="/coursedetails">
-                                    Fully Responsive Web Design &amp;
-                                    Development.
-                                  </Link>
-                                </h3>
-                              </div>
-                              <div class="course-meta">
-                                <span class="course-category">
-                                  <Link to="#">Web Design</Link>
-                                </span>
-                                <span class="course-author">
-                                  <Link to="#">250 Students</Link>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        {/* <!-- /course --> */}
-
-                        <div class="col-md-4">
-                          <div class="best-course-pic-text relative-position">
-                            <div class="best-course-pic relative-position">
-                              <img src="assets/img/course/bc-4.jpg" alt="" />
-                              <div class="course-price text-center gradient-bg">
-                                <span>$99.00</span>
-                              </div>
-                              <div class="course-rate ul-li">
-                                <ul>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="course-details-btn">
-                                <Link to="/coursedetails">
-                                  COURSE DETAIL{" "}
-                                  <i class="fas fa-arrow-right"></i>
-                                </Link>
-                              </div>
-                              to <div class="blakish-overlay"></div>
-                            </div>
-                            <div class="best-course-text">
-                              <div class="course-title mb20 headline relative-position">
-                                <h3>
-                                  <Link to="/coursedetails">
-                                    Fully Responsive Web Design &amp;
-                                    Development.
-                                  </Link>
-                                </h3>
-                              </div>
-                              <div class="course-meta">
-                                <span class="course-category">
-                                  <Link to="#">Web Design</Link>
-                                </span>
-                                <span class="course-author">
-                                  <Link to="#">250 Students</Link>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        {/* <!-- /course --> */}
-
-                        <div class="col-md-4">
-                          <div class="best-course-pic-text relative-position">
-                            <div class="best-course-pic relative-position">
-                              <img src="assets/img/course/bc-5.jpg" alt="" />
-                              <div class="course-price text-center gradient-bg">
-                                <span>$99.00</span>
-                              </div>
-                              <div class="course-rate ul-li">
-                                <ul>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="course-details-btn">
-                                <Link to="/coursedetails">
-                                  COURSE DETAIL{" "}
-                                  <i class="fas fa-arrow-right"></i>
-                                </Link>
-                              </div>
-                              <div class="blakish-overlay"></div>
-                            </div>
-                            <div class="best-course-text">
-                              <div class="course-title mb20 headline relative-position">
-                                <h3>
-                                  <Link to="/coursedetails">
-                                    Fully Responsive Web Design &amp;
-                                    Development.
-                                  </Link>
-                                </h3>
-                              </div>
-                              <div class="course-meta">
-                                <span class="course-category">
-                                  <Link to="#">Web Design</Link>
-                                </span>
-                                <span class="course-author">
-                                  <Link to="#">250 Students</Link>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        {/* <!-- /course --> */}
-
-                        <div class="col-md-4">
-                          <div class="best-course-pic-text relative-position">
-                            <div class="best-course-pic relative-position">
-                              <img src="assets/img/course/bc-6.jpg" alt="" />
-                              <div class="trend-badge-2 text-center text-uppercase">
-                                <i class="fas fa-bolt"></i>
-                                <span>Trending</span>
-                              </div>
-                              <div class="course-price text-center gradient-bg">
-                                <span>$99.00</span>
-                              </div>
-                              <div class="course-rate ul-li">
-                                <ul>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="course-details-btn">
-                                <Link to="/coursedetails">
-                                  COURSE DETAIL{" "}
-                                  <i class="fas fa-arrow-right"></i>
-                                </Link>
-                              </div>
-                              <div class="blakish-overlay"></div>
-                            </div>
-                            <div class="best-course-text">
-                              <div class="course-title mb20 headline relative-position">
-                                <h3>
-                                  <Link to="/coursedetails">
-                                    Fully Responsive Web Design &amp;
-                                    Development.
-                                  </Link>
-                                </h3>
-                              </div>
-                              <div class="course-meta">
-                                <span class="course-category">
-                                  <Link to="#">Web Design</Link>
-                                </span>
-                                <span class="course-author">
-                                  <Link to="#">250 Students</Link>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        {/* <!-- /course --> */}
-
-                        <div class="col-md-4">
-                          <div class="best-course-pic-text relative-position">
-                            <div class="best-course-pic relative-position">
-                              <img src="assets/img/course/bc-7.jpg" alt="" />
-                              <div class="course-price text-center gradient-bg">
-                                <span>$99.00</span>
-                              </div>
-                              <div class="course-rate ul-li">
-                                <ul>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="course-details-btn">
-                                <Link to="/coursedetails">
-                                  COURSE DETAIL{" "}
-                                  <i class="fas fa-arrow-right"></i>
-                                </Link>
-                              </div>
-                              <div class="blakish-overlay"></div>
-                            </div>
-                            <div class="best-course-text">
-                              <div class="course-title mb20 headline relative-position">
-                                <h3>
-                                  <Link to="/coursedetails">
-                                    Fully Responsive Web Design &amp;
-                                    Development.
-                                  </Link>
-                                </h3>
-                              </div>
-                              <div class="course-meta">
-                                <span class="course-category">
-                                  <Link to="#">Web Design</Link>
-                                </span>
-                                <span class="course-author">
-                                  <Link to="#">250 Students</Link>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        {/* <!-- /course --> */}
-
-                        <div class="col-md-4">
-                          <div class="best-course-pic-text relative-position">
-                            <div class="best-course-pic relative-position">
-                              <img src="assets/img/course/bc-8.jpg" alt="" />
-                              <div class="course-price text-center gradient-bg">
-                                <span>$99.00</span>
-                              </div>
-                              <div class="course-rate ul-li">
-                                <ul>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="course-details-btn">
-                                <Link to="/coursedetails">
-                                  COURSE DETAIL{" "}
-                                  <i class="fas fa-arrow-right"></i>
-                                </Link>
-                              </div>
-                              <div class="blakish-overlay"></div>
-                            </div>
-                            <div class="best-course-text">
-                              <div class="course-title mb20 headline relative-position">
-                                <h3>
-                                  <Link to="/coursedetails">
-                                    Fully Responsive Web Design &amp;
-                                    Development.
-                                  </Link>
-                                </h3>
-                              </div>
-                              <div class="course-meta">
-                                <span class="course-category">
-                                  <Link to="#">Web Design</Link>
-                                </span>
-                                <span class="course-author">
-                                  <Link to="#">250 Students</Link>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        {/* <!-- /course --> */}
-
-                        <div class="col-md-4">
-                          <div class="best-course-pic-text relative-position">
-                            <div class="best-course-pic relative-position">
-                              <img src="assets/img/course/bc-4.jpg" alt="" />
-                              <div class="course-price text-center gradient-bg">
-                                <span>$99.00</span>
-                              </div>
-                              <div class="course-rate ul-li">
-                                <ul>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                  <li>
-                                    <i class="fas fa-star"></i>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="course-details-btn">
-                                <Link to="/coursedetails">
-                                  COURSE DETAIL{" "}
-                                  <i class="fas fa-arrow-right"></i>
-                                </Link>
-                              </div>
-                              <div class="blakish-overlay"></div>
-                            </div>
-                            <div class="best-course-text">
-                              <div class="course-title mb20 headline relative-position">
-                                <h3>
-                                  <Link to="/coursedetails">
-                                    Fully Responsive Web Design &amp;
-                                    Development.
-                                  </Link>
-                                </h3>
-                              </div>
-                              <div class="course-meta">
-                                <span class="course-category">
-                                  <Link to="#">Web Design</Link>
-                                </span>
-                                <span class="course-author">
-                                  <Link to="#">250 Students</Link>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
                         {/* <!-- /course --> */}
                       </div>
                     </div>
@@ -564,325 +136,44 @@ const Course = () => {
                         <tr class="list-head">
                           <th>COURSE NAME</th>
                           <th>COURSE TYPE</th>
-                          <th>STARTS</th>
                           <th>LENGTH</th>
                         </tr>
+                        {courseSyllabus.map(x => (
                         <tr>
                           <td>
                             <div class="course-list-img-text">
                               <div class="course-list-img">
-                                <img src="assets/img/course/cl-1.jpg" alt="" />
+                                <img src={x.images} alt="" />
                               </div>
                               <div class="course-list-text">
                                 <h3>
-                                  <Link to="#">
-                                    Fully Responsive Web Design & Development.
+                                  <Link to="/js">
+                                    {x.topic}
                                   </Link>
                                 </h3>
                                 <div class="course-meta">
                                   <span class="course-category bold-font">
-                                    <Link to="#">$120.25</Link>
+                                    <Link to="/java">₹{x.price}</Link>
                                   </span>
-                                  <div class="course-rate ul-li">
-                                    <ul>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                    </ul>
-                                  </div>
+                                  
                                 </div>
                               </div>
                             </div>
                           </td>
                           <td>
                             <div class="course-type-list">
-                              <span>Graphic Design & 3D</span>
+                              <span>{x.keyword}</span>
                             </div>
                           </td>
-                          <td>6-06-2018</td>
-                          <td>3 Months</td>
+                          <td>{x.duration}</td>
                         </tr>
-                        <tr>
-                          <td>
-                            <div class="course-list-img-text">
-                              <div class="course-list-img">
-                                <img src="assets/img/course/cl-2.jpg" alt="" />
-                              </div>
-                              <div class="course-list-text">
-                                <h3>
-                                  <Link to="#">
-                                    Fully Responsive Web Design & Development.
-                                  </Link>
-                                </h3>
-                                <div class="course-meta">
-                                  <span class="course-category bold-font">
-                                    <Link to="#">$120.25</Link>
-                                  </span>
-                                  <div class="course-rate ul-li">
-                                    <ul>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="course-type-list">
-                              <span>Graphic Design & 3D</span>
-                            </div>
-                          </td>
-                          <td>6-06-2018</td>
-                          <td>3 Months</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="course-list-img-text">
-                              <div class="course-list-img">
-                                <img src="assets/img/course/cl-3.jpg" alt="" />
-                              </div>
-                              <div class="course-list-text">
-                                <h3>
-                                  <Link to="#">
-                                    Fully Responsive Web Design & Development.
-                                  </Link>
-                                </h3>
-                                <div class="course-meta">
-                                  <span class="course-category bold-font">
-                                    <Link to="#">$120.25</Link>
-                                  </span>
-                                  <div class="course-rate ul-li">
-                                    <ul>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="course-type-list">
-                              <span>Graphic Design & 3D</span>
-                            </div>
-                          </td>
-                          <td>6-06-2018</td>
-                          <td>3 Months</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="course-list-img-text">
-                              <div class="course-list-img">
-                                <img src="assets/img/course/cl-4.jpg" alt="" />
-                              </div>
-                              <div class="course-list-text">
-                                <h3>
-                                  <Link to="#">
-                                    Fully Responsive Web Design & Development.
-                                  </Link>
-                                </h3>
-                                <div class="course-meta">
-                                  <span class="course-category bold-font">
-                                    <Link to="#">$120.25</Link>
-                                  </span>
-                                  <div class="course-rate ul-li">
-                                    <ul>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="course-type-list">
-                              <span>Graphic Design & 3D</span>
-                            </div>
-                          </td>
-                          <td>6-06-2018</td>
-                          <td>3 Months</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="course-list-img-text">
-                              <div class="course-list-img">
-                                <img src="assets/img/course/cl-5.jpg" alt="" />
-                              </div>
-                              <div class="course-list-text">
-                                <h3>
-                                  <Link to="#">
-                                    Fully Responsive Web Design & Development.
-                                  </Link>
-                                </h3>
-                                <div class="course-meta">
-                                  <span class="course-category bold-font">
-                                    <Link to="#">$120.25</Link>
-                                  </span>
-                                  <div class="course-rate ul-li">
-                                    <ul>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="course-type-list">
-                              <span>Graphic Design & 3D</span>
-                            </div>
-                          </td>
-                          <td>6-06-2018</td>
-                          <td>3 Months</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="course-list-img-text">
-                              <div class="course-list-img">
-                                <img src="assets/img/course/cl-1.jpg" alt="" />
-                              </div>
-                              <div class="course-list-text">
-                                <h3>
-                                  <Link to="/coursedetails">
-                                    Fully Responsive Web Design & Development.
-                                  </Link>
-                                </h3>
-                                <div class="course-meta">
-                                  <span class="course-category bold-font">
-                                    <Link to="#">$120.25</Link>
-                                  </span>
-                                  <div class="course-rate ul-li">
-                                    <ul>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                      <li>
-                                        <i class="fas fa-star"></i>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="course-type-list">
-                              <span>Graphic Design & 3D</span>
-                            </div>
-                          </td>
-                          <td>6-06-2018</td>
-                          <td>3 Months</td>
-                        </tr>
+                       ))}
                       </table>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="couse-pagination text-center ul-li">
-                <ul>
-                  <li class="pg-text">
-                    <Link to="#">PREV</Link>
-                  </li>
-                  <li>
-                    <Link to="#">01</Link>
-                  </li>
-                  <li>
-                    <Link to="#">02</Link>
-                  </li>
-                  <li class="active">
-                    <Link to="#">03</Link>
-                  </li>
-                  <li>
-                    <Link to="#">04</Link>
-                  </li>
-                  <li>
-                    <Link to="#">...</Link>
-                  </li>
-                  <li>
-                    <Link to="#">15</Link>
-                  </li>
-                  <li class="pg-text">
-                    <Link to="#">NEXT</Link>
-                  </li>
-                </ul>
-              </div>
             </div>
             <div class="col-md-3">
               <div class="side-bar">
@@ -929,39 +220,6 @@ const Course = () => {
                         </Link>
                       </div>
                     </form>
-                  </div>
-                </div>
-                <div class="side-bar-widget">
-                  <h2 class="widget-title text-capitalize">
-                    <span>Featured</span> Course.
-                  </h2>
-                  <div class="featured-course">
-                    <div class="best-course-pic-text relative-position">
-                      <div class="best-course-pic relative-position">
-                        <img src="assets/img/blog/fb-1.jpg" alt="" />
-                        <div class="trend-badge-2 text-center text-uppercase">
-                          <i class="fas fa-bolt"></i>
-                          <span>Trending</span>
-                        </div>
-                      </div>
-                      <div class="best-course-text">
-                        <div class="course-title mb20 headline relative-position">
-                          <h3>
-                            <Link to="#">
-                              Fully Responsive Web Design &amp; Development.
-                            </Link>
-                          </h3>
-                        </div>
-                        <div class="course-meta">
-                          <span class="course-category">
-                            <Link to="#">Web Design</Link>
-                          </span>
-                          <span class="course-author">
-                            <Link to="#">250 Students</Link>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>

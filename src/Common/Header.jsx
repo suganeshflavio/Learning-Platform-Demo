@@ -35,7 +35,7 @@ const Header = () => {
       {/* <!-- Start of Header section
 		============================================= --> */}
       <header>
-        <div id='main-menu' class='main-menu-container'>
+        <div id='main-menu' class='main-menu-container' style={{height:"71px"}}>
           <div class='main-menu'>
             <div class='container'>
               <div class='navbar-default'>
@@ -46,7 +46,7 @@ const Header = () => {
                     </h2>
                   </Link>
                 </div>
-                <div class='cart-search float-right ul-li'>
+                {/* <div class='cart-search float-right ul-li'>
                   <ul>
                     <li>
                       <Link to='#'>
@@ -75,10 +75,10 @@ const Header = () => {
                       </div>
                     </li>
                   </ul>
-                </div>
-                <div class='log-in float-right'>
-                  <Link href='/api'>log in</Link>
-                </div>
+                </div> */}
+                {/* <div class='log-in float-right'>
+                  <Link href='/login'>log in</Link>
+                </div> */}
                 {/* <!-- Collect the nav links, forms, and other content for toggling --> */}
                 <nav class='navbar-menu float-right'>
                   <div class='nav-menu ul-li'>
@@ -91,6 +91,9 @@ const Header = () => {
                       <li class='menu-item-has-children ul-li-block'>
                         <Link to='/course'>Course</Link>
                         <ul class='sub-menu'>
+                        <li>
+                            <Link to='/c&c++'>C & C++</Link>
+                          </li>
                           <li>
                             <Link to='/js'>JavaScript</Link>
                           </li>
@@ -109,7 +112,7 @@ const Header = () => {
                             <Link to='/dsa'>Stack</Link>
                           </li>
                           <li>
-                            <Link to='/dsa'>Queue</Link>
+                            <Link to='/queue'>Queue</Link>
                           </li>
                           <li>
                             <Link to='/sort'>Sorting Algorithms</Link>

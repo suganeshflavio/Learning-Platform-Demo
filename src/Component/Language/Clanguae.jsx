@@ -1,22 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-
-const Search = () => {
+const Clanguae = () => {
 
 	const courseSyllabus = [
 		{
-			topic: 'Search Algorithm',
+			topic: 'C++ Programming Language',
 			images:
-				'https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221121132716/BinarySearch.png',
+				'https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230304231205/C-Language2.png',
 			description:
-				' Linear Search Approach: A simple approach is to do a linear search. The time complexity of the Linear search is O(n). Another approach to perform the same task is using Binary Search.  Binary Search is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(Log n). Sort the array in ascending order Set the low index to the first element of the array and the high index to the last element. Set the middle index to the average of the low and high indices.If the element at the middle index is the target element, return the middle index. If the target element is less than the element at the middle index, set the high index to the middle index – 1. If the target element is greater than the element at the middle index, set the low index to the middle index + 1. Repeat steps 3-6 until the element is found or it is clear that the element is not present in the array.',
+				'C++ is a general-purpose programming language and is widely used nowadays for competitive programming. It has imperative, object-oriented and generic programming features. C++ runs on lots of platforms like Windows, Linux, Unix, Mac etc. One of the key features of C++ is its ability to support low-level, system-level programming, making it suitable for developing operating systems, device drivers, and other system software. At the same time, C++ also provides a rich set of libraries and features for high-level application programming, making it a popular choice for developing desktop applications, video games, and other complex applications. C++ has a large, active community of developers and users, and a wealth of resources and tools available for learning and using the language. Some of the key features of C++ include: Object-Oriented Programming: C++ supports object-oriented programming, allowing developers to create classes and objects and to define methods and properties for these objects. Templates: C++ templates allow developers to write generic code that can work with any data type, making it easier to write reusable and flexible code. Standard Template Library (STL): The STL provides a wide range of containers and algorithms for working with data, making it easier to write efficient and effective code. Exception Handling: C++ provides robust exception handling capabilities, making it easier to write code that can handle errors and unexpected situations. ',
 
-			price: 799,
-			duration: "20 Days",
+			price: 599,
+			duration: "90 Days",
 			video: "6 Hours",
 			language: "English",
-			lectures: "10 Lectures"
+			lectures: "40 Lectures"
 		}
 	]
 
@@ -29,7 +28,7 @@ const Search = () => {
 				<div class="container">
 					<div class="page-breadcrumb-content text-center">
 						<div class="page-breadcrumb-title">
-							<h2 class="breadcrumb-head black bold">Search Algorithm <span>Course Details.</span></h2>
+							<h2 class="breadcrumb-head black bold">C & C++ <span>Course Details.</span></h2>
 						</div>
 						<div class="page-breadcrumb-item ul-li">
 							<ul class="breadcrumb text-uppercase black">
@@ -55,12 +54,10 @@ const Search = () => {
 								</div>
 								<div class="course-single-text">
 									<div class="course-title mt10 headline relative-position">
-										<h3><Link to="#"><b>{courseSyllabus[0].topic}</b></Link></h3>
+										<h3><Link to="#"><b>{courseSyllabus[0].topic}.</b></Link> </h3>
 									</div>
 									<div class="course-details-content">
-										<p style={{ textAlign: "justify" }}>
-											{courseSyllabus[0].description}
-										</p>
+										<p style={{textAlign:"justify"}}>{courseSyllabus[0].description}</p>
 									</div>
 
 									<div class="course-details-category ul-li">
@@ -312,8 +309,9 @@ const Search = () => {
 			</section>
 			{/* <!-- End of course details section
 		============================================= -->	 */}
+
 		</div>
 	)
 }
 
-export default Search
+export default Clanguae

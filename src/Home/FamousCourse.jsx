@@ -317,7 +317,7 @@ const FamousCourse = () => {
                     SORT ABOUT US
                   </span>
                   <h2>
-                    We are <span>Genius Course</span>
+                    We are <span>Learning Platform</span>
                     work since 1980.
                   </h2>
                   <p>

@@ -58,7 +58,7 @@ const About = () => {
                 <div class="about-text-item">
                   <div class="section-title-2  headline text-left">
                     <h2>
-                      We Are <span>Genius Course,</span> Online Course Since
+                      We Are <span>Learning Platform</span> Online Course Since
                       1990
                     </h2>
                   </div>
@@ -93,7 +93,7 @@ const About = () => {
                   <div class="course-advantage about-teacher-2">
                     <div class="section-title-2  headline text-left">
                       <h2>
-                        Genius Course <span>Advantages</span>
+                       Learning <span>Advantages</span>
                       </h2>
                     </div>
                     <div class="service-slide_3">

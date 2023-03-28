@@ -15,8 +15,8 @@ const Footer = () => {
 						<div class="row">
 							<div class="col-md-6">
 								<div class="footer-widget "  >
-									<div class="footer-logo mb35">
-										<img src="assets/img/logo/f-logo.png" alt=""/>
+									<div class="footer-logo mb35" style={{color:"#000"}}>
+									<h2 class="widget-title">LOGO</h2>
 									</div>
 									<div class="footer-about-text">
 										<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente non provident, dolorem at, eligendi ea aliquam, officia rem quidem expedita cumque.</p>

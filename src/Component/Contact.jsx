@@ -15,7 +15,7 @@ const Contact = () => {
           <div class="page-breadcrumb-content text-center">
             <div class="page-breadcrumb-title">
               <h2 class="breadcrumb-head black bold">
-                Genius <span>Contact</span>
+              Learning Platform <span>Contact</span>
               </h2>
             </div>
             <div class="page-breadcrumb-item ul-li">

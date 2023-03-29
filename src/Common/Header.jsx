@@ -87,41 +87,40 @@ const Header = () => {
                         <Link to='/'>Home</Link>
                       </li>
                       <li>
-                        <Link to='/about'>About Us</Link>
                       </li>
-                      <li>
+                      <li class='menu-item-has-children ul-li-block'>
                         <Link to='/course'>Course</Link>
-                      </li>
-                      <li class='menu-item-has-children ul-li-block'>
-                        <Link to='/contact'>Languages</Link>
                         <ul class='sub-menu'>
                           <li>
-                            <Link to='/course'>JavaScript</Link>
+                            <Link to='/js'>JavaScript</Link>
                           </li>
                           <li>
-                            <Link to='/course'>Python</Link>
+                            <Link to='/python'>Python</Link>
                           </li>
                           <li>
-                            <Link to='/course'>Java</Link>
+                            <Link to='/java'>Java</Link>
                           </li>
                         </ul>
                       </li>
                       <li class='menu-item-has-children ul-li-block'>
-                        <Link to='/coursedetails'>Data Structure</Link>
+                        <Link >Data Structure</Link>
                         <ul class='sub-menu'>
                           <li>
-                            <Link to='/course'>Stack</Link>
+                            <Link to='/dsa'>Stack</Link>
                           </li>
                           <li>
-                            <Link to='/course'>Queue</Link>
+                            <Link to='/dsa'>Queue</Link>
                           </li>
                           <li>
-                            <Link to='/course'>Sorting Algorithms</Link>
+                            <Link to='/sort'>Sorting Algorithms</Link>
                           </li>
                           <li>
-                            <Link to='/course'>Searching Algorithms</Link>
+                            <Link to='/search'>Searching Algorithms</Link>
                           </li>
                         </ul>
+                      </li>
+                      <li class='menu-item-has-children ul-li-block'>
+                        <Link to='/about'>About Us</Link>
                       </li>
                     </ul>
                   </div>

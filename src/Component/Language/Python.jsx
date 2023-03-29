@@ -1,17 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const CourseDetails = () => {
+const Python = () => {
   return (
     <div>
-        	{/* <!-- Start of breadcrumb section
+                	{/* <!-- Start of breadcrumb section
 		============================================= --> */}
 		<section id="breadcrumb" class="breadcrumb-section relative-position backgroud-style">
 			<div class="blakish-overlay"></div>
 			<div class="container">
 				<div class="page-breadcrumb-content text-center">
 					<div class="page-breadcrumb-title">
-						<h2 class="breadcrumb-head black bold">Learning Platform <span>Course Details.</span></h2>
+						<h2 class="breadcrumb-head black bold">Python<span>Course Details.</span></h2>
 					</div>
 					<div class="page-breadcrumb-item ul-li">
 						<ul class="breadcrumb text-uppercase black">
@@ -25,7 +25,7 @@ const CourseDetails = () => {
 	{/* <!-- End of breadcrumb section
 		============================================= --> */}
 
-{/* <!-- Start of course details section
+        {/* <!-- Start of course details section
 		============================================= --> */}
 		<section id="course-details" class="course-details-section">
 			<div class="container">
@@ -309,8 +309,11 @@ const CourseDetails = () => {
 		</section>
 	{/* <!-- End of course details section
 		============================================= -->	 */}
+        
+
+
     </div>
   )
 }
 
-export default CourseDetails
+export default Python

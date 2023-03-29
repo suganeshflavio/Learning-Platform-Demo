@@ -12,9 +12,9 @@ export const Testimonial = () => {
         <div class="jarallax  backgroud-style">
           <div class="container">
             <div class="section-title mb20 headline text-center ">
-              <span class="subtitle text-uppercase">GENIUS ADVANTAGES</span>
+              <span class="subtitle text-uppercase">LEARNING ADVANTAGES</span>
               <h2>
-                Reason <span>Why Choose Genius.</span>
+                Reason <span>Why Choose Learning Platform.</span>
               </h2>
             </div>
             <div id="service-slide-item" class="service-slide">

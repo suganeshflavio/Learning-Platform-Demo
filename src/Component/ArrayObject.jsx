@@ -17,6 +17,7 @@ const courseSyllabus = [
     },
     {
       topic: "Data Structures and Algorithms",
+      images: "https://jthemes.net/themes/html/genius-course/assets/img/course/bc-2.jpg",
       subtopics: ["Arrays and Linked Lists", "Stacks and Queues", "Sorting and Searching"]
     }
   ];

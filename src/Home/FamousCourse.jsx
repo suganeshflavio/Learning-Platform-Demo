@@ -5,11 +5,35 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import { Link } from "react-router-dom";
 
 const FamousCourse = () => {
+
+  const courseSyllabus = [
+    {
+      topic: "Introduction of JavaScript",
+      images: "https://jthemes.net/themes/html/genius-course/assets/img/course/bc-6.jpg",
+      subtopics: ["History of Computing", "Data Representation", "Algorithms and Problem Solving"]
+    },
+    {
+      topic: "Advnaced Python Topics",
+      images: "https://jthemes.net/themes/html/genius-course/assets/img/course/bc-1.jpg",
+      subtopics: ["Variables and Data Types", "Control Structures", "Functions"]
+    },
+    {
+      topic: "Core Topics of Java",
+      images: "https://jthemes.net/themes/html/genius-course/assets/img/course/bc-7.jpg",
+      subtopics: ["Classes and Objects", "Inheritance", "Polymorphism"]
+    },
+    {
+      topic: "Basics of C and C++",
+      images: "https://jthemes.net/themes/html/genius-course/assets/img/course/bc-2.jpg",
+      subtopics: ["Arrays and Linked Lists", "Stacks and Queues", "Sorting and Searching"]
+    }
+  ];
+
   return (
     <div>
       {/* <!-- Start popular course
 		============================================= --> */}
-      <section id="popular-course" class="popular-course-section">
+      <section id="popular-course" class="popular-course-section" style={{paddingBottom: "50px"}}>
         <div class="container">
           <div class="section-title mb20 headline text-left ">
             <span class="subtitle text-uppercase">LEARN NEW SKILLS</span>
@@ -20,13 +44,12 @@ const FamousCourse = () => {
           <div id="course-slide-item" class="course-slide">
             {/* <!-- /item --> */}
             <OwlCarousel className="owl-theme" loop margin={10} nav>
+              {courseSyllabus.map(x => (
               <div class="item">
                 <div class="course-item-pic-text ">
                   <div class="course-pic relative-position mb25">
-                    <img src="assets/img/course/c-1.jpg" alt="" />
-                    <div class="course-price text-center gradient-bg">
-                      <span>$99.00</span>
-                    </div>
+                    <img src={x.images} alt="" />
+                   
                     <div class="course-details-btn">
                       <Link to="#">
                         COURSE DETAIL <i class="fas fa-arrow-right"></i>
@@ -41,192 +64,22 @@ const FamousCourse = () => {
                       <span class="course-author bold-font">
                         <Link to="#">John Luis Fernandes</Link>
                       </span>
-                      <div class="course-rate ul-li">
-                        <ul>
-                          <li>
-                            <i class="fas fa-star"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star"></i>
-                          </li>
-                        </ul>
-                      </div>
                     </div>
                     <div class="course-title mt10 headline pb45 relative-position">
                       <h3>
                         <Link to="#">
-                          Fully Responsive Web Design & Development.
+                          {x.topic}
                         </Link>{" "}
-                        <span class="trend-badge text-uppercase bold-font">
+                        {/* <span class="trend-badge text-uppercase bold-font">
                           <i class="fas fa-bolt"></i> TRENDING
-                        </span>
+                        </span> */}
                       </h3>
                     </div>
-                    <div class="course-viewer ul-li">
-                      <ul>
-                        <li>
-                          <Link to="#">
-                            <i class="fas fa-user"></i> 1.220
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            <i class="fas fa-comment-dots"></i> 1.015
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">125k Unrolled</Link>
-                        </li>
-                      </ul>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
-              <div class="item">
-                <div class="course-item-pic-text ">
-                  <div class="course-pic relative-position mb25">
-                    <img src="assets/img/course/c-2.jpg" alt="" />
-                    <div class="course-price text-center gradient-bg">
-                      <span>$99.00</span>
-                    </div>
-                    <div class="course-details-btn">
-                      <Link to="#">
-                        COURSE DETAIL <i class="fas fa-arrow-right"></i>
-                      </Link>
-                    </div>
-                  </div>
-                  <div class="course-item-text">
-                    <div class="course-meta">
-                      <span class="course-category bold-font">
-                        <Link to="#">Mobile Apps</Link>
-                      </span>
-                      <span class="course-author bold-font">
-                        <Link to="#">Fernando Torres</Link>
-                      </span>
-                      <div class="course-rate ul-li">
-                        <ul>
-                          <li>
-                            <i class="fas fa-star"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star"></i>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="course-title mt10 headline pb45 relative-position">
-                      <h3>
-                        <Link to="#">
-                          Introduction to Mobile Application Development.
-                        </Link>
-                      </h3>
-                    </div>
-                    <div class="course-viewer ul-li">
-                      <ul>
-                        <li>
-                          <Link to="#">
-                            <i class="fas fa-user"></i> 1.220
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            <i class="fas fa-comment-dots"></i> 1.015
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">125k Unrolled</Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="course-item-pic-text ">
-                  <div class="course-pic relative-position mb25">
-                    <img src="assets/img/course/c-3.jpg" alt="" />
-                    <div class="course-price text-center gradient-bg">
-                      <span>$99.00</span>
-                    </div>
-                    <div class="course-details-btn">
-                      <Link to="#">
-                        COURSE DETAIL <i class="fas fa-arrow-right"></i>
-                      </Link>
-                    </div>
-                  </div>
-                  <div class="course-item-text">
-                    <div class="course-meta">
-                      <span class="course-category bold-font">
-                        <Link to="#">Motion Graphic </Link>
-                      </span>
-                      <span class="course-author bold-font">
-                        <Link to="#">enny Garcias</Link>
-                      </span>
-                      <div class="course-rate ul-li">
-                        <ul>
-                          <li>
-                            <i class="fas fa-star"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star"></i>
-                          </li>
-                          <li>
-                            <i class="fas fa-star"></i>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="course-title mt10 headline pb45 relative-position">
-                      <h3>
-                        <Link to="#">
-                          Learning IOS Apps Programming & Development.
-                        </Link>
-                      </h3>
-                    </div>
-                    <div class="course-viewer ul-li">
-                      <ul>
-                        <li>
-                          <Link to="#">
-                            <i class="fas fa-user"></i> 1.220
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            <i class="fas fa-comment-dots"></i> 1.015
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">125k Unrolled</Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                    ))}
             </OwlCarousel>
           </div>
         </div>

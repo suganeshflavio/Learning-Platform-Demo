@@ -23,30 +23,16 @@ const Carousel = () => {
                 </div>
               </div>
               <div class="layer-1-3">
-                <div class="search-course mb30 relative-position">
-                  <form action="#" method="post">
-                    <input
-                      class="course"
-                      name="course"
-                      type="text"
-                      placeholder="Type what do you want to learn today?"
-                    />
-                    <div class="nws-button text-center  gradient-bg text-capitalize">
-                      <button type="submit" value="Submit">
-                        Search Course
-                      </button>
-                    </div>
-                  </form>
-                </div>
                 <div class="layer-1-4">
                   <div class="slider-course-category ul-li text-center">
                     <span class="float-left">BY CATEGORY:</span>
                     <ul>
-                      <li>Graphics Design</li>
-                      <li>Web Design</li>
-                      <li>Mobile Application</li>
-                      <li>Enginering</li>
-                      <li>Science</li>
+                      <li>JavaScript</li>
+                      <li>Java</li>
+                      <li>Python</li>
+                      <li>C & C++</li>
+                      <li>Sorting Algorithm</li>
+                      <li>Search Algorithm</li>
                     </ul>
                   </div>
                 </div>
